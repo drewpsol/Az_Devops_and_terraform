@@ -18,7 +18,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: ubuntu-latest
+      vmImage: 'ubuntu-latest'
     steps:
     - task: Docker@2
       inputs:
@@ -33,7 +33,7 @@ stages:
   dependsOn: Build
   jobs:
   - job: Provision
-    displayName: 'Provisioning COntainer Instance'
+    displayName: 'Provisioning Container Instance'
     pool:
       'ubuntu-latest'
     variables:
