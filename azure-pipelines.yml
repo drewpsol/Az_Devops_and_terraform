@@ -37,7 +37,7 @@ stages:
     pool:
       'ubuntu-latest'
     variables:
-    - group: TereraformEnvVars
+    - group: TF Serviceplan
     steps:
       - script:
           set -e
