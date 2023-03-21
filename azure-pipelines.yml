@@ -37,7 +37,7 @@ stages:
     pool:
       'ubuntu-latest'
     variables:
-    - group: TF Serviceplan
+    - group: TF Serviceprincipal
     steps:
       - script:
           set -e
